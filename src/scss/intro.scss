@@ -8,6 +8,8 @@
 
     @include media-lg {
         padding: 0px 0px 108px;
+        max-height: none;
+        height: auto;
     }
 
     .logo-container {
@@ -61,7 +63,7 @@
 
             p {
                 color: $text-color;
-                font-size: 1.125rem;
+                font-size: 1.115rem;
                 font-weight: 500;
                 margin: 1.5rem 0;
             }
