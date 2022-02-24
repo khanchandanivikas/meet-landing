@@ -45,5 +45,11 @@
 
     img {
         border-radius: 10px;
+        @include transition;
+
+        &:hover {
+            transition: all 0.3s ease-out;
+            transform: scale(1.05);
+        }
     }
 }
