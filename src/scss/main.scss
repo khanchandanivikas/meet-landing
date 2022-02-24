@@ -1,0 +1,18 @@
+@import "resets";
+@import "functions";
+@import "mixins";
+@import "variables";
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+p {
+    line-height: 1.625rem;
+    letter-spacing: 1px;
+}

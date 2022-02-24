@@ -1,0 +1,45 @@
+@import "mixins";
+@import "variables";
+
+.footer-container {
+    background: linear-gradient(hsl(192, 37%, 48%, .85), hsl(192, 37%, 48%, .85)), url(../images/image-footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: #fff;
+    @include flex-center(row);
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 7rem 10%;
+    margin-top: -1.7rem;
+
+    h2 {
+        font-size: 2.5rem;
+        margin-top: -5px;
+    }
+
+    p {
+        padding: 0 4rem;
+        font-size: 1.125rem;
+        font-weight: 500;
+    }
+
+    button {
+        border: none;
+        outline: none;
+        font-weight: 700;
+        padding: 1rem 1.5rem;
+        border-radius: 2rem;
+        color: #fff;
+        min-width: 10rem;
+        @include transition;
+        cursor: pointer;
+        background-color: $dark-purple;
+        @include transition;
+
+        &:hover {
+            background-color: $dark-purple;
+            opacity: 0.8;
+        }
+    }
+}

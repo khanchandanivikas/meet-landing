@@ -1,0 +1,23 @@
+@import "variables";
+
+.info-container {
+    text-align: center;
+    padding: 0 10%;
+    margin: 108px 0;
+
+    h4 {
+        color: $sea-green;
+    }
+
+    h2 {
+        color: $heading-color;
+        font-size: 2.5rem;
+        margin: 1rem 0;
+    }
+
+    p {
+        color: $text-color;
+        font-weight: 500;
+        font-size: 1.115rem;
+    }
+}

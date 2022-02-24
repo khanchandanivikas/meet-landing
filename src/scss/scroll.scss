@@ -1,0 +1,63 @@
+@import "variables";
+@import "mixins";
+
+.scroll-container {
+    @include flex-center(column);
+    justify-content: center;
+    height: 100vh;
+
+    & .scroll-text {
+        font-weight: 700;
+
+        & span:nth-child(1) {
+            color: $dark-purple;
+        }
+
+        & span:nth-child(2) {
+            color: $sea-green;
+        }
+    }
+
+    & .mouse {
+        position: relative;
+        width: 2rem;
+        height: 3.5rem;
+        border: 3px solid $sea-green;
+        border-radius: 10rem;
+        margin-top: 1rem;
+
+        & .mouse-wheel {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform-origin: top center;
+            width: 4px;
+            height: 6px;
+            border-radius: 10rem;
+            background: $dark-purple;
+            animation: scroll 1.5s ease-in-out infinite;
+        }
+    }
+}
+
+@keyframes scroll {
+    0% {
+        height: 6px;
+        transform: translate(-50%, 0);
+        opacity: 0;
+    }
+
+    15% {
+        opacity: 0;
+    }
+
+    50% {
+        height: 12px;
+        opacity: 1;
+    }
+
+    100% {
+        transform: translate(-50%, 8px);
+        opacity: 0;
+    }
+}

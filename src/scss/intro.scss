@@ -1,0 +1,103 @@
+@import "mixins";
+@import "variables";
+
+.intro-container {
+    max-height: 637px;
+    height: 637px;
+    padding: 80px 0px 108px;
+
+    .logo-container {
+        @include flex-center(column);
+
+        .logo-img {
+            width: 10%;
+        }
+    }
+
+    & .intro-content {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        text-align: center;
+        margin-top: 3rem;
+
+        .hero-text {
+            margin-top: 2rem;
+
+            h1 {
+                color: $heading-color;
+                font-size: 4rem;
+            }
+
+            p {
+                color: $text-color;
+                font-size: 1.125rem;
+                font-weight: 500;
+                margin: 1.5rem 0;
+            }
+
+            button {
+                border: none;
+                outline: none;
+                font-weight: 700;
+                padding: 1rem 2rem;
+                border-radius: 2rem;
+                color: #fff;
+                @include transition;
+                cursor: pointer;
+
+                &:nth-of-type(1) {
+                    background-color: $sea-green;
+
+                    &:hover {
+                        background-color: $sea-green;
+                        opacity: 0.8;
+                    }
+                }
+
+                &:nth-of-type(2) {
+                    background-color: $dark-purple;
+                    margin-left: 10px;
+
+                    &:hover {
+                        background-color: $dark-purple;
+                        opacity: 0.8;
+                    }
+                }
+            }
+        }
+
+        .hero {
+            display: grid;
+            grid-template-columns: repeat(3, 110px);
+            grid-template-rows: 1fr 1fr;
+            justify-content: center;
+            align-content: start;
+            column-gap: 1.5rem;
+        }
+
+        .hero img {
+            width: 110px;
+        }
+
+        .hero-left img {
+            &:nth-child(2) {
+                margin-top: -3rem;
+            }
+
+            &:nth-child(5) {
+                margin-top: -3rem;
+            }
+        }
+
+        .hero-right img {
+            &:nth-child(2) {
+                margin-top: 3rem;
+            }
+
+            &:nth-child(5) {
+                margin-top: 3rem;
+            }
+        }
+    }
+}
