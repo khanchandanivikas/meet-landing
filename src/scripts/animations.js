@@ -94,16 +94,16 @@ export function featureImgsAnimation() {
         width: 0,
       },
       0
-    )
-    .from(
-      ".gallery img",
-      {
-        duration: 0.5,
-        scale: 1.5,
-        opacity: 0,
-      },
-      0
     );
+    // .from(
+    //   ".gallery img",
+    //   {
+    //     duration: 0.5,
+    //     scale: 1.5,
+    //     opacity: 0,
+    //   },
+    //   0
+    // );
   return timeline;
 }
 
@@ -111,8 +111,8 @@ export function featureContentAnimation() {
   const timeline = gsap.timeline({
     scrollTrigger: {
       trigger: ".footer-container",
-      start: "top 70%",
-      end: "top 70%",
+      start: "top 80%",
+      end: "top 80%",
       toggleActions: "play none none reverse",
     },
   });
