@@ -30,13 +30,15 @@ const Intro = () => {
           <img src={avatarLeftSix} alt="avatars-social-left" />
         </div>
         <div className="hero-text">
-          <h1>Group Chat for Everyone</h1>
-          <p>
+          <h1 className="hero-heading">Group Chat for Everyone</h1>
+          <p className="hero-description">
             Meet makes it easy to connect with others face-to-face virtually and
             collaborate across any device.
           </p>
-          <button>Download v1.3</button>
-          <button>What is it?</button>
+          <div className="link">
+            <button>Download v1.3</button>
+            <button>What is it?</button>
+          </div>
         </div>
         <div className="hero hero-right">
           <img src={avatarRightOne} alt="avatars-social-right" />

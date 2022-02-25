@@ -3,7 +3,7 @@ import "../scss/info.scss";
 
 const Info = () => {
   return (
-    <div>
+    <div className="info-wrapper">
       <section className="info-container">
         <h4>BUILT FOR MODERN USE</h4>
         <h2>Smarter meetings, all in one place</h2>
