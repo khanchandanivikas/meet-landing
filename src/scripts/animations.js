@@ -5,7 +5,7 @@ export function heroContentAnimation() {
     scrollTrigger: {
       trigger: ".intro-container",
       start: "top top",
-      end: "200%",
+      end: "150%",
       scrub: true,
       pin: true,
       anticipatePin: 1,
@@ -24,7 +24,7 @@ export function heroAvatarsAnimation() {
     scrollTrigger: {
       trigger: ".intro-container",
       start: "top top",
-      end: "200%",
+      end: "150%",
       scrub: true,
       pin: true,
       anticipatePin: 1,
@@ -51,7 +51,7 @@ export function featureImgsAnimation() {
     scrollTrigger: {
       trigger: ".gallery-container",
       start: "top 35%",
-      end: "200%",
+      end: "150%",
       scrub: true,
     },
   });
@@ -75,9 +75,9 @@ export function featureImgsAnimation() {
       ".gallery img:nth-child(2)",
       {
         duration: 0.7,
-        maxHeight: 0,
+        width: 0,
       },
-      0.2
+      0
     )
     .from(
       ".gallery img:nth-child(3)",
@@ -91,9 +91,9 @@ export function featureImgsAnimation() {
       ".gallery img:nth-child(4)",
       {
         duration: 0.7,
-        maxHeight: 0,
+        width: 0,
       },
-      0.2
+      0
     )
     .from(
       ".gallery img",
@@ -110,8 +110,9 @@ export function featureImgsAnimation() {
 export function featureContentAnimation() {
   const timeline = gsap.timeline({
     scrollTrigger: {
-      trigger: ".info-container",
-      start: "bottom 30%",
+      trigger: ".footer-container",
+      start: "top 70%",
+      end: "top 70%",
       toggleActions: "play none none reverse",
     },
   });
@@ -171,7 +172,7 @@ export function dividerAnimationTwo() {
   const timeline = gsap.timeline({
     scrollTrigger: {
       trigger: ".info-wrapper .divider",
-      start: "top 70%",
+      start: "top 60%",
       toggleActions: "play none none reverse",
     },
   });
