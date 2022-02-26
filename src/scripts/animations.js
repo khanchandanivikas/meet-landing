@@ -51,7 +51,6 @@ export function featureImgsAnimation() {
     scrollTrigger: {
       trigger: ".gallery-container",
       start: "top 35%",
-      // end: "150%",
       scrub: true,
     },
   });
@@ -95,15 +94,6 @@ export function featureImgsAnimation() {
       },
       0
     );
-    // .from(
-    //   ".gallery img",
-    //   {
-    //     duration: 0.5,
-    //     scale: 1.5,
-    //     opacity: 0,
-    //   },
-    //   0
-    // );
   return timeline;
 }
 
@@ -112,7 +102,6 @@ export function featureContentAnimation() {
     scrollTrigger: {
       trigger: ".footer-container",
       start: "top 80%",
-      end: "top 80%",
       toggleActions: "play none none reverse",
     },
   });
@@ -162,9 +151,21 @@ export function dividerAnimationOne() {
     },
   });
   timeline
-    .from(".gallery-container .divider .divider-line", { duration: 0.7, opacity: 0, scaleY: 0 })
-    .from(".gallery-container .divider .divider-number", { duration: 0.7, scale: 0 }, "-=.5")
-    .from(".gallery-container .divider .divider-number span", { duration: 1, opacity: 0 }, "-=.1");
+    .from(".gallery-container .divider .divider-line", {
+      duration: 0.7,
+      opacity: 0,
+      scaleY: 0,
+    })
+    .from(
+      ".gallery-container .divider .divider-number",
+      { duration: 0.7, scale: 0 },
+      "-=.5"
+    )
+    .from(
+      ".gallery-container .divider .divider-number span",
+      { duration: 1, opacity: 0 },
+      "-=.1"
+    );
   return timeline;
 }
 
@@ -177,8 +178,21 @@ export function dividerAnimationTwo() {
     },
   });
   timeline
-    .from(".info-wrapper .divider .divider-line", { duration: 0.7, opacity: 0.5, scaleY: 0 })
-    .from(".info-wrapper .divider .divider-number", { duration: 0.7, scale: 0 }, "-=.5")
-    .from(".info-wrapper .divider .divider-number span", { duration: 1, opacity: 0 }, "-=.1");
+    .from(".info-wrapper .divider .divider-line", {
+      duration: 0.7,
+      opacity: 0.5,
+      scaleY: 0,
+    })
+    .from(
+      ".info-wrapper .divider .divider-number",
+      { duration: 0.7, scale: 0 },
+      "-=.5"
+    )
+    .from(
+      ".info-wrapper .divider .divider-number span",
+      { duration: 1, opacity: 0 },
+      "-=.1"
+    );
   return timeline;
 }
+
