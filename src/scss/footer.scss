@@ -13,16 +13,6 @@
     padding: 7rem 10%;
     margin-top: -1.7rem;
 
-    @include media-lg {
-        padding: 6rem 5%;
-    }
-
-    @include media-md {
-        padding: 5rem 2rem;
-        text-align: center;
-        @include flex-center(column);
-    }
-
     h2 {
         font-size: 2.5rem;
         margin-top: -5px;
@@ -40,6 +30,7 @@
         @include media-lg {
             padding: 0 3rem;
         }
+
         @include media-md {
             padding: 2rem 0;
         }
@@ -62,5 +53,15 @@
             background-color: $dark-purple;
             opacity: 0.8;
         }
+    }
+
+    @include media-lg {
+        padding: 6rem 5%;
+    }
+
+    @include media-md {
+        padding: 5rem 2rem;
+        text-align: center;
+        @include flex-center(column);
     }
 }

@@ -32,6 +32,16 @@
     padding: 0 10%;
     margin-top: 108px;
 
+    img {
+        border-radius: 10px;
+        @include transition;
+
+        &:hover {
+            transition: all 0.3s ease-out;
+            transform: scale(1.05);
+        }
+    }
+
     @include media-lg {
         padding: 0 5%;
     }
@@ -43,13 +53,4 @@
         gap: 1rem;
     }
 
-    img {
-        border-radius: 10px;
-        @include transition;
-
-        &:hover {
-            transition: all 0.3s ease-out;
-            transform: scale(1.05);
-        }
-    }
 }

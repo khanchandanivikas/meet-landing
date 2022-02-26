@@ -51,7 +51,7 @@ export function featureImgsAnimation() {
     scrollTrigger: {
       trigger: ".gallery-container",
       start: "top 35%",
-      end: "150%",
+      // end: "150%",
       scrub: true,
     },
   });
@@ -162,9 +162,9 @@ export function dividerAnimationOne() {
     },
   });
   timeline
-    .from(".gallery-container .divider-line", { duration: 0.7, opacity: 0.5, scaleY: 0 })
-    .from(".gallery-container .divider-number", { duration: 0.5, scale: 0 }, "-=.5")
-    .from(".gallery-container .divider-number span", { duration: 0.8, opacity: 0 }, "-=.1");
+    .from(".gallery-container .divider .divider-line", { duration: 0.7, opacity: 0, scaleY: 0 })
+    .from(".gallery-container .divider .divider-number", { duration: 0.7, scale: 0 }, "-=.5")
+    .from(".gallery-container .divider .divider-number span", { duration: 1, opacity: 0 }, "-=.1");
   return timeline;
 }
 

@@ -2,15 +2,7 @@
 @import "variables";
 
 .intro-container {
-    max-height: 637px;
-    height: 637px;
     padding: 80px 0px 108px;
-
-    @include media-lg {
-        padding: 0px 0px 108px;
-        max-height: none;
-        height: auto;
-    }
 
     .logo-container {
         @include flex-center(column);
@@ -162,5 +154,11 @@
                 margin-top: 3rem;
             }
         }
+    }
+
+    @include media-lg {
+        padding: 0px 0px 108px;
+        max-height: none;
+        height: auto;
     }
 }
