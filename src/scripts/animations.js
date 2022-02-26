@@ -235,7 +235,7 @@ export function dividerAnimationTwo() {
   const timeline = gsap.timeline({
     scrollTrigger: {
       trigger: ".info-wrapper .divider",
-      start: "top 70%",
+      start: "top 60%",
       toggleActions: "play none none reverse",
     },
   });
