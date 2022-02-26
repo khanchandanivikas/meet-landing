@@ -1,4 +1,6 @@
-import { gsap } from "gsap";
+import {
+  gsap
+} from "gsap";
 
 export function heroContentAnimation() {
   const timeline = gsap.timeline({
@@ -12,10 +14,25 @@ export function heroContentAnimation() {
     },
   });
   timeline
-    .from(".logo-container", { duration: 1.5, opacity: 0 })
-    .from(".hero-heading", { duration: 1.5, opacity: 0 }, 0.5)
-    .from(".hero-description", { duration: 1, opacity: 0, y: 25 }, 1)
-    .from(".link", { duration: 1, stagger: 0.2, opacity: 0, y: 25 }, 1.5);
+    .from(".logo-container", {
+      duration: 1.5,
+      opacity: 0
+    })
+    .from(".hero-heading", {
+      duration: 1.5,
+      opacity: 0
+    }, 0.5)
+    .from(".hero-description", {
+      duration: 1,
+      opacity: 0,
+      y: 25
+    }, 1)
+    .from(".link", {
+      duration: 1,
+      stagger: 0.2,
+      opacity: 0,
+      y: 25
+    }, 1.5);
   return timeline;
 }
 
@@ -31,18 +48,54 @@ export function heroAvatarsAnimation() {
     },
   });
   timeline
-    .from(".hero-left img:nth-child(2)", { duration: 1.5, scale: 0 }, 1.5)
-    .from(".hero-right img:nth-child(4)", { duration: 1.5, scale: 0 }, "-=1")
-    .from(".hero-left img:nth-child(4)", { duration: 1.5, scale: 0 }, "-=1")
-    .from(".hero-right img:nth-child(2)", { duration: 1.5, scale: 0 }, "-=.75")
-    .from(".hero-left img:nth-child(6)", { duration: 1.5, scale: 0 }, "-=1")
-    .from(".hero-right img:nth-child(6)", { duration: 1.5, scale: 0 }, "-=1.5")
-    .from(".hero-left img:nth-child(3)", { duration: 1.5, scale: 0 }, "-=1")
-    .from(".hero-right img:nth-child(5)", { duration: 1.5, scale: 0 }, "-=1.25")
-    .from(".hero-left img:nth-child(5)", { duration: 1.5, scale: 0 }, "-=.75")
-    .from(".hero-right img:nth-child(1)", { duration: 1.5, scale: 0 }, "-=1.5")
-    .from(".hero-left img:nth-child(1)", { duration: 1.5, scale: 0 }, "-=1.5")
-    .from(".hero-right img:nth-child(3)", { duration: 1.5, scale: 0 }, "-=1");
+    .from(".hero-left img:nth-child(2)", {
+      duration: 1.5,
+      scale: 0
+    }, 1.5)
+    .from(".hero-right img:nth-child(4)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=1")
+    .from(".hero-left img:nth-child(4)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=1")
+    .from(".hero-right img:nth-child(2)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=.75")
+    .from(".hero-left img:nth-child(6)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=1")
+    .from(".hero-right img:nth-child(6)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=1.5")
+    .from(".hero-left img:nth-child(3)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=1")
+    .from(".hero-right img:nth-child(5)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=1.25")
+    .from(".hero-left img:nth-child(5)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=.75")
+    .from(".hero-right img:nth-child(1)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=1.5")
+    .from(".hero-left img:nth-child(1)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=1.5")
+    .from(".hero-right img:nth-child(3)", {
+      duration: 1.5,
+      scale: 0
+    }, "-=1");
   return timeline;
 }
 
@@ -56,39 +109,34 @@ export function featureImgsAnimation() {
   });
   timeline
     .from(
-      ".gallery",
-      {
+      ".gallery", {
         duration: 1.5,
       },
       0
     )
     .from(
-      ".gallery img:nth-child(1)",
-      {
+      ".gallery img:nth-child(1)", {
         duration: 0.7,
         width: 0,
       },
       0
     )
     .from(
-      ".gallery img:nth-child(2)",
-      {
+      ".gallery img:nth-child(2)", {
         duration: 0.7,
         width: 0,
       },
       0
     )
     .from(
-      ".gallery img:nth-child(3)",
-      {
+      ".gallery img:nth-child(3)", {
         duration: 0.7,
         width: 0,
       },
       0
     )
     .from(
-      ".gallery img:nth-child(4)",
-      {
+      ".gallery img:nth-child(4)", {
         duration: 0.7,
         width: 0,
       },
@@ -106,9 +154,19 @@ export function featureContentAnimation() {
     },
   });
   timeline
-    .from(".info-container h4", { duration: 2, opacity: 0 }, 0)
-    .from(".info-container h2", { duration: 2, opacity: 0 }, 0.3)
-    .from(".info-container p", { duration: 1, opacity: 0, y: 15 }, 0.5);
+    .from(".info-container h4", {
+      duration: 2,
+      opacity: 0
+    }, 0)
+    .from(".info-container h2", {
+      duration: 2,
+      opacity: 0
+    }, 0.3)
+    .from(".info-container p", {
+      duration: 1,
+      opacity: 0,
+      y: 15
+    }, 0.5);
   return timeline;
 }
 
@@ -157,13 +215,17 @@ export function dividerAnimationOne() {
       scaleY: 0,
     })
     .from(
-      ".gallery-container .divider .divider-number",
-      { duration: 0.7, scale: 0 },
+      ".gallery-container .divider .divider-number", {
+        duration: 0.7,
+        scale: 0
+      },
       "-=.5"
     )
     .from(
-      ".gallery-container .divider .divider-number span",
-      { duration: 1, opacity: 0 },
+      ".gallery-container .divider .divider-number span", {
+        duration: 1,
+        opacity: 0
+      },
       "-=.1"
     );
   return timeline;
@@ -172,7 +234,7 @@ export function dividerAnimationOne() {
 export function dividerAnimationTwo() {
   const timeline = gsap.timeline({
     scrollTrigger: {
-      trigger: ".info-wrapper .divider",
+      trigger: ".footer-container",
       start: "top 60%",
       toggleActions: "play none none reverse",
     },
@@ -184,15 +246,18 @@ export function dividerAnimationTwo() {
       scaleY: 0,
     })
     .from(
-      ".info-wrapper .divider .divider-number",
-      { duration: 0.7, scale: 0 },
+      ".info-wrapper .divider .divider-number", {
+        duration: 0.7,
+        scale: 0
+      },
       "-=.5"
     )
     .from(
-      ".info-wrapper .divider .divider-number span",
-      { duration: 1, opacity: 0 },
+      ".info-wrapper .divider .divider-number span", {
+        duration: 1,
+        opacity: 0
+      },
       "-=.1"
     );
   return timeline;
 }
-
