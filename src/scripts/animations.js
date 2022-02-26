@@ -7,7 +7,7 @@ export function heroContentAnimation() {
     scrollTrigger: {
       trigger: ".intro-container",
       start: "top top",
-      end: "150%",
+      end: "200%",
       scrub: true,
       pin: true,
       anticipatePin: 1,
@@ -41,7 +41,7 @@ export function heroAvatarsAnimation() {
     scrollTrigger: {
       trigger: ".intro-container",
       start: "top top",
-      end: "150%",
+      end: "200%",
       scrub: true,
       pin: true,
       anticipatePin: 1,
