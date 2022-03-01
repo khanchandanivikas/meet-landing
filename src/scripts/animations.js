@@ -108,16 +108,15 @@ export function featureImgsAnimation() {
     },
   });
   timeline
-    .from(
-      ".gallery", {
-        duration: 1.5,
-      },
-      0
-    )
+  .from(
+    ".gallery", {
+      duration: 1.5,
+    }
+  )
     .from(
       ".gallery img:nth-child(1)", {
         duration: 0.7,
-        width: 0,
+        width: 0
       },
       0
     )
@@ -131,14 +130,14 @@ export function featureImgsAnimation() {
     .from(
       ".gallery img:nth-child(3)", {
         duration: 0.7,
-        width: 0,
+        width: 0
       },
       0
     )
     .from(
       ".gallery img:nth-child(4)", {
         duration: 0.7,
-        width: 0,
+        width: 0
       },
       0
     );
@@ -235,7 +234,38 @@ export function dividerAnimationTwo() {
   const timeline = gsap.timeline({
     scrollTrigger: {
       trigger: ".info-wrapper .divider",
-      start: "top 70%",
+      start: "top 60%",
+      toggleActions: "play none none reverse",
+    },
+  });
+  timeline
+    .from(".info-wrapper .divider .divider-line", {
+      duration: 0.7,
+      opacity: 0.5,
+      scaleY: 0,
+    })
+    .from(
+      ".info-wrapper .divider .divider-number", {
+        duration: 0.7,
+        scale: 0
+      },
+      "-=.5"
+    )
+    .from(
+      ".info-wrapper .divider .divider-number span", {
+        duration: 1,
+        opacity: 0
+      },
+      "-=.1"
+    );
+  return timeline;
+}
+
+export function dividerAnimationTwoTablet() {
+  const timeline = gsap.timeline({
+    scrollTrigger: {
+      trigger: ".info-wrapper .divider",
+      start: "top 80%",
       toggleActions: "play none none reverse",
     },
   });

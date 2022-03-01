@@ -13,10 +13,10 @@ import { dividerAnimationOne } from "./scripts/animations";
 import { featureImgsAnimation } from "./scripts/animations";
 import { featureContentAnimation } from "./scripts/animations";
 import { dividerAnimationTwo } from "./scripts/animations";
+import { dividerAnimationTwoTablet } from "./scripts/animations";
 import { footerAnimation } from "./scripts/animations";
 
 function App() {
-  
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
     heroContentAnimation();
@@ -24,7 +24,11 @@ function App() {
     dividerAnimationOne();
     featureImgsAnimation();
     featureContentAnimation();
-    dividerAnimationTwo();
+    if (window.innerWidth < "1024" && window.innerWidth > "800") {
+      dividerAnimationTwoTablet();
+    } else {
+      dividerAnimationTwo();
+    }
     footerAnimation();
   }, []);
   return (
