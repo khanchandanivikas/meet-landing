@@ -18,11 +18,11 @@ p {
 }
 
 body::-webkit-scrollbar-track {
-    background: hsl(192, 37%, 48%, .3) !important;
+    background: hsl(192, 37%, 48%, .3);
 }
 
 body::-webkit-scrollbar {
-    width: 8px;
+    width: 1rem;
     background-color: #F5F5F5;
 }
 
